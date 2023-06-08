@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TankYouVeryMuch", "TankYouVeryMuch", "{989C6831-5C19-46A5-B747-343A206D50F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankYouVeryMuch.Api", "TankYouVeryMuch.Api\TankYouVeryMuch.Api.csproj", "{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankYouVeryMuch.Domain", "TankYouVeryMuch.Domain\TankYouVeryMuch.Domain.csproj", "{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankYouVeryMuch.Models.Dto", "TankYouVeryMuch.Models.Dto\TankYouVeryMuch.Models.Dto.csproj", "{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D1A7535A-DD20-4AC4-B5F2-E4551D3C933E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TankYouVeryMuchTests", "TankYouVeryMuchTests", "{C301692F-F436-4E21-903A-C475F1C07EEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F} = {989C6831-5C19-46A5-B747-343A206D50F2}
+		{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3} = {989C6831-5C19-46A5-B747-343A206D50F2}
+		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040} = {989C6831-5C19-46A5-B747-343A206D50F2}
+		{C301692F-F436-4E21-903A-C475F1C07EEB} = {D1A7535A-DD20-4AC4-B5F2-E4551D3C933E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDDD7F6-DA8E-4B2A-899F-34075FDC9CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
