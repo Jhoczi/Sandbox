@@ -13,7 +13,7 @@ public class WotService : IWotService
     {
         _clientFactory = clientFactory;
         // INFO: Comes from secret storage
-        _applicationId = configuration["WotApplicationId"];
+        _applicationId = configuration["WotApplicationId"] ?? throw new InvalidOperationException();
     }
     
     public async Task<WotPlayerResponse> GetPlayer(string username)

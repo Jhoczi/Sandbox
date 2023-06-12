@@ -1,13 +1,18 @@
+using TankYouVeryMuch.Api.Configuration;
 using TankYouVeryMuch.Domain.Services.WotService;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication
+    .CreateBuilder(args);
+
+builder.Configuration.AddJsonFile("appsettings.json");
+
+builder.Services.AddSingleton<ServiceConfiguration>();
+builder.Services.AddTransient<IWotService, WotService>();
 
 builder.Services.AddHttpClient("WorldOfTanksApi", config =>
 {
-    config.BaseAddress = new Uri("https://api.worldoftanks.eu/wot/");
+    config.BaseAddress = new Uri(builder.Configuration["Settings:WotApiUrl"] ?? throw new InvalidOperationException());
 });
-
-builder.Services.AddTransient<IWotService, WotService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -27,4 +32,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();
