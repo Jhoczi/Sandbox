@@ -14,7 +14,7 @@ public class AccountsController : ControllerBase
         _wotService = wotService;
     }
 
-    [HttpGet]
+    [HttpGet("{username}")]
     public async Task<IActionResult> GetPlayer(string username)
     {
         var player = await _wotService.GetPlayer(username);
