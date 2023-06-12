@@ -4,6 +4,7 @@ using RestEase;
 
 namespace TankYouVeryMuch.Tests.Configuration.RestEase.Wot;
 
+[Header("User-Agent", "RestEase")]
 public interface ITankYouVeryMuchApi
 {
     [Get("Accounts/{username}")]
