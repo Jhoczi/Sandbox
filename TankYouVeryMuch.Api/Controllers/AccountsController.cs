@@ -22,7 +22,7 @@ public class AccountsController : ControllerBase
         return Ok(player);
     }
 
-    [HttpGet("playerAccountData")]
+    [HttpGet("playerData")]
     public async Task<IActionResult> GetPlayerPersonalData(int accountId)
     {
         var playerDetails = await _wotService.GetPlayerPersonalData(accountId);
