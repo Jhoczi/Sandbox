@@ -14,11 +14,19 @@ public class AccountsController : ControllerBase
         _wotService = wotService;
     }
 
-    [HttpGet("{username}")]
+    [HttpGet("player")]
     public async Task<IActionResult> GetPlayer(string username)
     {
         var player = await _wotService.GetPlayer(username);
         
         return Ok(player);
+    }
+
+    [HttpGet("playerAccountData")]
+    public async Task<IActionResult> GetPlayerPersonalData(int accountId)
+    {
+        var playerDetails = await _wotService.GetPlayerPersonalData(accountId);
+        
+        return Ok(playerDetails);
     }
 }

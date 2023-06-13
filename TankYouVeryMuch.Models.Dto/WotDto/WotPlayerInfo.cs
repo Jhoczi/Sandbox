@@ -2,9 +2,9 @@
 
 namespace TankYouVeryMuch.Models.Dto.WotDto;
 
-public class WotPlayerData
+public class WotPlayerInfo
 {
     [JsonPropertyName("account_id")]
-    public int AccountId { get; set; }
-    public string Nickname { get; set; }
+    public int AccountId { get; init; }
+    public string Nickname { get; init; }
 }

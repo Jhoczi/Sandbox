@@ -6,6 +6,5 @@ public interface IWotService
 {
     Task<WotPlayerResponse> GetPlayer(string username);
     
-    // todo: implement this after GetPlayer
-    //Task<object> GetPlayerDetails(string accountId);
+    Task<WotPlayerPersonalDataResponse> GetPlayerPersonalData(int accountId);
 }

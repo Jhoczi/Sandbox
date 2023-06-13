@@ -15,6 +15,7 @@ public class GeneralApiTests : TestBase
     public async Task GetPlayer_Should_ReturnsPlayerInfo_001()
     {
         var username = "KseroPL";
+        var accountId = 502466176;
 
         var getPlayerResult = await _tankYouVeryMuchApi.GetPlayer(username);
         
@@ -27,7 +28,7 @@ public class GeneralApiTests : TestBase
         getPlayerResultData.Status.Should().Be("ok");
 
         var playerAccountDetails = getPlayerResultData.Data.First();
-        playerAccountDetails.AccountId.Should().NotBe(0);
+        playerAccountDetails.AccountId.Should().Be(accountId);
         playerAccountDetails.Nickname.Should().Be(username);
     }
 }
