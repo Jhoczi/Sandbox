@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TankYouVeryMuchTests", "Tan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankYouVeryMuch.Tests", "TankYouVeryMuch.Tests\TankYouVeryMuch.Tests.csproj", "{5BFE9E11-8D4D-42F7-B95E-ECAC12F05364}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbProviderAbstract", "DbProviderAbstract", "{55C80961-C39A-4A28-A36F-4108EA57F162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProvider.Abstract", "DbProvider.Abstract\DbProvider.Abstract.csproj", "{1E269504-A818-4EC3-B0DC-F758A6587B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,7 @@ Global
 		{9E5FDF0D-52B6-4BF9-A0E4-14F386CE2040} = {989C6831-5C19-46A5-B747-343A206D50F2}
 		{C301692F-F436-4E21-903A-C475F1C07EEB} = {D1A7535A-DD20-4AC4-B5F2-E4551D3C933E}
 		{5BFE9E11-8D4D-42F7-B95E-ECAC12F05364} = {C301692F-F436-4E21-903A-C475F1C07EEB}
+		{1E269504-A818-4EC3-B0DC-F758A6587B1B} = {55C80961-C39A-4A28-A36F-4108EA57F162}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,5 +54,9 @@ Global
 		{5BFE9E11-8D4D-42F7-B95E-ECAC12F05364}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BFE9E11-8D4D-42F7-B95E-ECAC12F05364}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BFE9E11-8D4D-42F7-B95E-ECAC12F05364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E269504-A818-4EC3-B0DC-F758A6587B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E269504-A818-4EC3-B0DC-F758A6587B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E269504-A818-4EC3-B0DC-F758A6587B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E269504-A818-4EC3-B0DC-F758A6587B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
