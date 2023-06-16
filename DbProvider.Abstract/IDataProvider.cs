@@ -10,5 +10,5 @@ public interface IDataProvider<TEntity> where TEntity: IEntity
     Task<TEntity> GetSingle(Expression<Func<TEntity, bool>> criteria);
     Task<IDeleteResult> Delete(object id);
     Task<IDeleteResult> Delete(Expression<Func<TEntity, bool>> criteria);
-    Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> filter);
+    Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> filter);
 }
