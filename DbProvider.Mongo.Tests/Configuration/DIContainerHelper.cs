@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace DbProvider.Mongo.Tests.Configuration;
 
-public static class DIContainerConfiguration
+public static class DIContainerHelper
 {
     public static IContainer CreateDIContainer()
     {

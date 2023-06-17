@@ -28,11 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Fixtures" />
-      <Folder Include="Tests" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\DbProvider.Abstract\DbProvider.Abstract.csproj" />
       <ProjectReference Include="..\DbProvider.Mongo\DbProvider.Mongo.csproj" />
     </ItemGroup>
