@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TankYouVeryMuch.Domain.Repositories;
 using TankYouVeryMuch.Domain.Services.WotService;
 
 namespace TankYouVeryMuch.Api.Controllers;
@@ -8,10 +9,13 @@ namespace TankYouVeryMuch.Api.Controllers;
 public class AccountsController : ControllerBase
 {
     private readonly IWotService _wotService;
+    
+    private readonly IWotRepository _wotRepository;
 
-    public AccountsController(IWotService wotService)
+    public AccountsController(IWotService wotService, IWotRepository wotRepository)
     {
         _wotService = wotService;
+        _wotRepository = wotRepository;
     }
 
     [HttpGet("player")]
@@ -26,6 +30,8 @@ public class AccountsController : ControllerBase
     public async Task<IActionResult> GetPlayerPersonalData(int accountId)
     {
         var playerDetails = await _wotService.GetPlayerPersonalData(accountId);
+        
+        await _wotRepository.CreatePlayerPersonalData(playerDetails.Data.First().Value);
         
         return Ok(playerDetails);
     }

@@ -1,10 +1,13 @@
 ﻿using DbProvider.Abstract;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace TankYouVeryMuch.Models.Entity;
 
-public class WotPlayerPersonalData : IEntity<string>
+public class WotPlayerPersonalData : IEntity<ObjectId>
 {
-    public string Id { get; set; }
+    [BsonId]
+    public ObjectId Id { get; set; }
     public long LastBattleTime { get; set; }
     public int AccountId { get; set; }
     public long CreatedAt { get; set; }
