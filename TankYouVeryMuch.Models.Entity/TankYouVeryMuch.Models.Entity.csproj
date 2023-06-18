@@ -4,7 +4,10 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <LangVersion>11</LangVersion>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DbProvider.Abstract\DbProvider.Abstract.csproj" />
+    </ItemGroup>
 
 </Project>
