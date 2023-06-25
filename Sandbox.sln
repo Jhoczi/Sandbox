@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbProvider.Mongo.Tests", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankYouVeryMuch.Models.Entity", "TankYouVeryMuch.Models.Entity\TankYouVeryMuch.Models.Entity.csproj", "{DEE32C9F-F5B5-4AC1-A8C3-FA4ED1312EA1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{4D2F4D67-6F7C-466E-B94D-D78D40A41845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{6B873C71-5F73-45A0-965F-0F4ED61881C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,7 @@ Global
 		{ECD77565-88AA-47BB-A1B5-A90C391D94F3} = {D1A7535A-DD20-4AC4-B5F2-E4551D3C933E}
 		{BE4C905F-37B6-488F-AF7D-4A7167B04778} = {ECD77565-88AA-47BB-A1B5-A90C391D94F3}
 		{DEE32C9F-F5B5-4AC1-A8C3-FA4ED1312EA1} = {989C6831-5C19-46A5-B747-343A206D50F2}
+		{6B873C71-5F73-45A0-965F-0F4ED61881C9} = {4D2F4D67-6F7C-466E-B94D-D78D40A41845}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{16BC70BC-EA02-4B3F-8615-91E55E19BA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -84,5 +89,9 @@ Global
 		{DEE32C9F-F5B5-4AC1-A8C3-FA4ED1312EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEE32C9F-F5B5-4AC1-A8C3-FA4ED1312EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEE32C9F-F5B5-4AC1-A8C3-FA4ED1312EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B873C71-5F73-45A0-965F-0F4ED61881C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B873C71-5F73-45A0-965F-0F4ED61881C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B873C71-5F73-45A0-965F-0F4ED61881C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B873C71-5F73-45A0-965F-0F4ED61881C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
