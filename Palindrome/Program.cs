@@ -8,7 +8,6 @@ string CheckPalindromeV1(string input)
     
     input = input.Replace(" ","").ToLower();
     int n = input.Length % 2 == 0 ? input.Length / 2 : (input.Length - 1) / 2;
-    //Console.WriteLine(n);
 
     for (var i = 0; i < n; ++i)
     {
@@ -36,3 +35,4 @@ var result = CheckPalindromeV1(input);
 var result2 = CheckPalindromeV2(input);
 Console.WriteLine(result);
 Console.WriteLine(result2);
+ 
